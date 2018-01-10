@@ -9,7 +9,7 @@ public class BackgroundManager : MonoBehaviour {
     SpriteRenderer sR;
 
 	// Use this for initialization
-	void Start () {
+	void Awake () {
         sR = GetComponent<SpriteRenderer>();
         SetBackground(0);
 	}
