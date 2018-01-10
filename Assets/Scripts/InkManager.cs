@@ -17,13 +17,16 @@ public class InkManager : MonoBehaviour {
     private Text textPrefab;
     [SerializeField]
     private Button buttonPrefab;
+    [SerializeField]
+    BackgroundManager backgroundManager;
+
     CharacterManager characterManager;
-    LevelManager levelManager; 
+    LevelManager levelManager;
 
     void Start()
     {
         characterManager = GetComponent<CharacterManager>();
-        levelManager = GetComponent<LevelManager>(); 
+        levelManager = GetComponent<LevelManager>();
         StartStory();
     }
 
@@ -43,6 +46,11 @@ public class InkManager : MonoBehaviour {
         story.BindExternalFunction("place_one_actor", (string soleName) =>
         {
             characterManager.PlaceOneActor(soleName);
+        });
+
+        story.BindExternalFunction("choose_background", (int background) =>
+        {
+            backgroundManager.SetBackground(background);
         });
 
         RefreshView();

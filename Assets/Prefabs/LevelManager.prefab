@@ -58,6 +58,7 @@ MonoBehaviour:
   textPrefab: {fileID: 114537842276604116, guid: d090905472cdb3c46b3d48e8e1727d86,
     type: 2}
   buttonPrefab: {fileID: 11455116, guid: 37c108a6c38964f79a6621eccb33ddc1, type: 2}
+  backgroundManager: {fileID: 0}
 --- !u!114 &114619665580021734
 MonoBehaviour:
   m_ObjectHideFlags: 1
