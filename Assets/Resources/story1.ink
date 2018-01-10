@@ -14,6 +14,8 @@ EXTERNAL choose_background(background)
 ==intro==
 Budzisz się zlana zimnym potem. Coś Ci się śniło, ale co? Nie możesz sobie przypomnieć. Jedyne co pozostało po tym śnie to niejasne uczucie grozy zawiązujące się na wysokości Twojego żołądka. Gdy unosisz głowę z poduszki, Twój wzrok pada na wpatrującą się w Ciebie pustymi oczami czaszkę jelenia wiszącą na przeciwległej ścianie. Ten widok wyrywa Cię z sennego otępienia i przypominasz sobie gdzie jesteś. Supeł w Twoich trzewiach przemienia się w grudę lodu przeszywającą Cię od środka przenikliwym zimnem. Zamykasz oczy i kierujesz szybką modlitwę o ukojenie duszy do Najświętszej Panienki. Szczęśliwie, jesteś w pokoju sama.
 *[Rozejrzyj się po pokoju] -> pokoj
+
+*[Siądź i weź umrzyj bo mam Cię dosyć] ->palenisko
 -> DONE
 ==pokoj==
 {place_actors("Actor 2", "Actor 3")}

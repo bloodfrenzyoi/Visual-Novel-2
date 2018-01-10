@@ -18,6 +18,10 @@ public class InkManager : MonoBehaviour {
     [SerializeField]
     private Button buttonPrefab;
     [SerializeField]
+
+    //moje
+    private GameObject buttonOrganizerPrefab;
+    [SerializeField]
     BackgroundManager backgroundManager;
 
     CharacterManager characterManager;
@@ -68,10 +72,17 @@ public class InkManager : MonoBehaviour {
 
         if (story.currentChoices.Count > 0)
         {
+            //moje
+            GameObject buttonOrganizer = Instantiate(buttonOrganizerPrefab) as GameObject;
+            buttonOrganizer.transform.SetParent(canvas.transform, false);
+            //moje
             for (int i = 0; i < story.currentChoices.Count; i++)
             {
                 Choice choice = story.currentChoices[i];
                 Button button = CreateChoiceView(choice.text.Trim());
+                //moje
+                button.transform.SetParent(buttonOrganizer.transform);
+                //moje
                 button.onClick.AddListener(delegate {
                     OnClickChoiceButton(choice);
                 });
