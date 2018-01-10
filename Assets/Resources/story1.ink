@@ -7,7 +7,8 @@ EXTERNAL choose_background(background)
 //{place_actors("Actor","Actor 2")}
 {change_emotion("Neutral", 0)}
 ..{change_emotion("Neutral", 1)}
-{choose_background("Room")}
+//background = 1, 2, 3 etc. (int only)
+{choose_background(1)}
 -> intro
 
 ==intro==
@@ -18,6 +19,7 @@ Budzisz się zlana zimnym potem. Coś Ci się śniło, ale co? Nie możesz sobie
 {place_actors("Actor 2", "Actor 3")}
 {change_emotion("Scared", 0)}
 {change_emotion("Angry", 1)}
+{choose_background(0)}
 Pokój jest niewiele większy od Twojej komnaty w Rozłogach. Łóżko, w którym leżysz, zajmuje znaczną jego część. Ściany są obite bogato zdobionym materiałem, tu i ówdzie wiszą na nich czaszki zwierząt. Na prawo od łóżka znajduje się palenisko. Po przeciwnej stronie widzisz drzwi, nad którymi wiszą zwierzęce skóry.
 *[Podejdź do paleniska] -> palenisko
 *[Przyjrzyj się czaszkom]-> czaszki
@@ -42,6 +44,7 @@ Białe czaszki na ścianie w milczeniu szczerzą do Ciebie zęby. Rozpoznajesz k
 ->DONE
 
 ==sen==
+{choose_background(2)}
 *[Wróć do pokoju]
 ->pokoj
 ->DONE
