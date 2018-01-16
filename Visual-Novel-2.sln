@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Visual-Novel-2", "Visual-No
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Visual-Novel-2.Editor.Plugins", "Visual-Novel-2.Editor.Plugins.csproj", "{9C0B0D88-C764-C3A8-E06D-83BC603A04C6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Visual-Novel-2.Editor", "Visual-Novel-2.Editor.csproj", "{C5F5B0DC-2526-C090-B497-428BEA044BD2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +27,10 @@ Global
 		{9C0B0D88-C764-C3A8-E06D-83BC603A04C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9C0B0D88-C764-C3A8-E06D-83BC603A04C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9C0B0D88-C764-C3A8-E06D-83BC603A04C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5F5B0DC-2526-C090-B497-428BEA044BD2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5F5B0DC-2526-C090-B497-428BEA044BD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5F5B0DC-2526-C090-B497-428BEA044BD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5F5B0DC-2526-C090-B497-428BEA044BD2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
